@@ -31,6 +31,10 @@
   color: #ff2a68;
 }
 
+.client-details .text-small:hover {
+  cursor: pointer;
+}
+
 .client-details .text-medium {
   margin-bottom: 20px;
 }

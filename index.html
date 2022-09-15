@@ -13,6 +13,12 @@
   <link rel="stylesheet" href="styles/reviews.css"/>
   <link rel="stylesheet" href="styles/fares.css"/>
   <link rel="stylesheet" href="styles/header.css"/>
+
+  <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="parallax.js-1.5.0/parallax.min.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="javascript/reviews.js"></script>
+  <script type="text/javascript" charset="utf-8" src="javascript/header.js"></script>
   <title>Лендинг</title>
 </head>
 <body>
@@ -20,7 +26,7 @@
 <div class="header">
   <div class="container buffer-both">
     <div class="header-logo">
-      <img class="header-logo-image" src="images/logo.png" alt="[Логотип]" />
+      <img class="header-logo-image" src="images/logo.png" alt="[Логотип]"/>
     </div>
     <div class="header-nav">
       <ul>
@@ -38,7 +44,7 @@
   </div>
 </div>
 
-<div class="intro text-center">
+<div class="intro text-center" data-parallax="scroll" data-image-src="images/bg.jpg">
   <img class="intro-logo" src="images/intro_logo.png" alt="[Интро лого]">
   <h1 class="title-large">Полет на Луну</h1>
   <h2 class="text-lead">Вас ждет незабываемое путешествие с полной гарантией безопасности </h2>
@@ -50,7 +56,7 @@
   <small class="text-small">* Скидка 10% в день рождения</small>
 </div>
 
-<div class="features text-center"  id="about">
+<div class="features text-center" id="about">
   <div class="container">
     <div class="column-1-3">
       <div class="features-item">
@@ -82,7 +88,7 @@
   </div>
 </div>
 
-<div class="reviews"  id="comments">
+<div class="reviews" id="comments">
   <div class="container">
     <div class="text-center">
       <h2 class="title-small"> Отзывы наших клиентов </h2>
@@ -92,18 +98,19 @@
         <div class="column-1-2 buffer-top">
           <div class="team-client">
             <div class="client-image">
-              <img class="client-photo" src="clients/vampyr.jpg"  alt="[Остап фото]" />
+              <img class="client-photo" src="clients/vampyr.jpg" alt="[Остап фото]"/>
             </div>
             <div class="client-details">
               <h3 class="title-small">Джонатан Рид</h3>
-              <small class="text-small">Командовать космическим кораблем будет он</small>
-              <p class="text-medium">
-                —Это какое-то безумие. Я потерял связь с реальностью. —Верно, безумие... Безумие луны... Той, что превращает слепящий свет солнца в мягкое сияние.
+              <small class="text-small client-slogan">Командовать космическим кораблем будет он</small>
+              <p class="text-medium client-about">
+                —Это какое-то безумие. Я потерял связь с реальностью. —Верно, безумие... Безумие луны... Той, что
+                превращает слепящий свет солнца в мягкое сияние.
               </p>
               <div class="client-social">
-                <img class="client-social-icon" src="social/facebook.png" alt="fb" />
-                <img class="client-social-icon" src="social/twitter.png" alt="tw" />
-                <img class="client-social-icon" src="social/youtube.png" alt="yt" />
+                <img class="client-social-icon" src="social/facebook.png" alt="fb"/>
+                <img class="client-social-icon" src="social/twitter.png" alt="tw"/>
+                <img class="client-social-icon" src="social/youtube.png" alt="yt"/>
               </div>
             </div>
           </div>
@@ -111,17 +118,17 @@
         <div class="column-1-2 buffer-top">
           <div class="team-client">
             <div class="client-image">
-              <img class="client-photo" src="clients/mj.jpg" alt="[mj фото]" />
+              <img class="client-photo" src="clients/mj.jpg" alt="[mj фото]"/>
             </div>
             <div class="client-details">
               <h3 class="title-small">Майкл Джексон</h3>
-              <small class="text-small">Летает каждые выходные</small>
-              <p class="text-medium">
+              <small class="text-small client-slogan">Летает каждые выходные</small>
+              <p class="text-medium client-about">
                 Моя походка не лунная, просто у Луны — моя.
               </p>
               <div class="client-social">
-                <img class="client-social-icon" src="social/facebook.png" alt="fb" />
-                <img class="client-social-icon" src="social/twitter.png" alt="tw" />
+                <img class="client-social-icon" src="social/facebook.png" alt="fb"/>
+                <img class="client-social-icon" src="social/twitter.png" alt="tw"/>
               </div>
             </div>
           </div>
@@ -148,7 +155,7 @@
             <h3 class="text-lead">Минимальный объем</h3>
           </div>
           <ul class="text-medium">
-            <li class="fare-features-item">Эконом </li>
+            <li class="fare-features-item">Эконом</li>
             <li class="fare-features-item">Облет вокруг Луны</li>
             <li class="fare-features-item">&nbsp;</li>
             <li class="fare-features-item">Ракета до Земли включена</li>
