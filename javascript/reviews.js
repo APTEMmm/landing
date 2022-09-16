@@ -4,10 +4,12 @@ window.onload = function () {
   };
 }
 
-$(function () {
-  $('.client-about').hide();
+window.onload = function(){
+  $(function () {
+    $('.client-about').hide();
 
-  $('.client-slogan').click(function () {
-    $(this).next().slideToggle({duration: 300});
+    $('.client-slogan').click(function () {
+      $(this).next().slideToggle({duration: 300});
+    });
   });
-});
+};
